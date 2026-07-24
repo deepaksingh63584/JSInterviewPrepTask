@@ -24,3 +24,8 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(result);
+
+
+
+let unique = [...new Set(str.split(" "))].join(" ");
+console.log(unique);
