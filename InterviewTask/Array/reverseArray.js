@@ -26,6 +26,22 @@ function reverseArray4(arr) {
   return arr.reduce((rev, cur) => [cur, ...rev], []);
 }
 
+// Question 4: revese a array without using built-in methods
+function reverseArray(arr) {
+  const len = arr.length; // Manually get the length of the array
+  const reversed = new Array(len);  // Create a new array to hold reversed elements
+  for (let i = 0; i < len; i++) {
+    reversed[i] = arr[len - 1 - i]; // Fill the new array with elements from the original array in reverse order
+  }
+  return reversed;
+}
+
+// Test
+const originalArray = [1, 2, 3, 4, 5];
+const reversedArray = reverseArray(originalArray);
+console.log(reversedArray); // [5, 4, 3, 2, 1]
+console.log(originalArray); // [1, 2, 3, 4, 5] (original array remains unchanged)
+
 // Test
 const arr = [1, 2, 3, 4, 5];
 console.log("Original:", arr);

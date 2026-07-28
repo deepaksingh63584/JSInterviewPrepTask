@@ -23,6 +23,31 @@ function sortArray2(arr) {
 }
 console.log("Method 2 (Bubble Sort):", sortArray2([...arr1]).join(","));
 
+//bubble sort without using built-in methods
+function sortArray(arr) {
+    // Manual bubble sort, no built-in sort or slice
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result[i] = arr[i];
+    }
+    let n = result.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (result[j] > result[j + 1]) {
+                let temp = result[j];
+                result[j] = result[j + 1];
+                result[j + 1] = temp;
+            }
+        }
+    }
+    return result;
+}
+
+// Example usage:
+const randomArr = [5, 2, 9, 1, 5, 6];
+const sortedArr = sortArray(randomArr);
+console.log(sortedArr); // [1, 2, 5, 5, 6, 9]
+
 
 // Method 3: Quick Sort
 function sortArray3(arr) {
