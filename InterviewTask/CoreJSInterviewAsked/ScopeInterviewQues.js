@@ -43,3 +43,13 @@ function scopeTest() {
   console.log(z); // 30
 }
 scopeTest();
+
+const arr = [1, 2, 3, 4, 5];
+
+const result = arr.map((num) => {
+  if (num % 2 === 0) {
+    return num * 2;
+  }
+});
+
+console.log(result); // Output: [undefined, 4, undefined, 8, undefined]
