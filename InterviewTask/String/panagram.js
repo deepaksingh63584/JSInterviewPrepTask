@@ -27,5 +27,5 @@ const examples = [
 ];
 
 for (const example of examples) {
-  console.log(`${example} -> ${isPangram(example) ? 'Pangram' : 'Not a pangram'}`);
+  console.log(`${example} -> ${isPangram(example) ? 'Pangram' : 'Not a pangram'}`); // Output: Pangram, Pangram, Not a pangram
 }

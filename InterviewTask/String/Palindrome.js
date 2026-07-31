@@ -24,7 +24,7 @@ function isPalindrome(s) {
 
 // Driver code
 const s = "abba";
-console.log(isPalindrome(s));
+console.log(isPalindrome(s)); // Output: true
 
 // Question 5: Palindrome Check Without Built-in Methods
 function isPalindrome1(str) {

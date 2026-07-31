@@ -30,7 +30,7 @@ function reverseArray4(arr) {
 function reverseArray(arr) {
   const len = arr.length; // Manually get the length of the array
   const reversed = new Array(len);  // Create a new array to hold reversed elements
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < len; i++) { // Loop through the original array
     reversed[i] = arr[len - 1 - i]; // Fill the new array with elements from the original array in reverse order
   }
   return reversed;

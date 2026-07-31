@@ -20,9 +20,8 @@ function mostFrequent1(arr) {
     }
     return { item: maxItem, count: maxCount };
 }
-console.log("Original array:", arr1);
-console.log("Sample Output: a ( 5 times )\n"); 
-console.log("Method 1 (Object counting):", formatOutput(mostFrequent1(arr1)));
+console.log("Original array:", arr1); // Original array: [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
+console.log("Method 1 (Object counting):", formatOutput(mostFrequent1(arr1))); // Method 1 (Object counting): a ( 5 times )
 
 // Method 2: Using Map
 function mostFrequent2(arr) {
@@ -41,7 +40,7 @@ function mostFrequent2(arr) {
     }
     return { item: maxItem, count: maxCount };
 }
-console.log("Method 2 (Using Map):", formatOutput(mostFrequent2(arr1)));
+console.log("Method 2 (Using Map):", formatOutput(mostFrequent2(arr1))); // Method 2 (Using Map): a ( 5 times )
 
 
 // Method 3: Using reduce and spread operator
@@ -55,7 +54,7 @@ function mostFrequent3(arr) {
     );
     return { item: maxItem, count: freq[maxItem] };
 }
-console.log("Method 3 (Using reduce):", formatOutput(mostFrequent3(arr1)));
+console.log("Method 3 (Using reduce):", formatOutput(mostFrequent3(arr1))); // Method 3 (Using reduce): a ( 5 times )
 
 // Method 4: Using sort and iteration
 function mostFrequent4(arr) {
@@ -67,4 +66,4 @@ function mostFrequent4(arr) {
     return { item: sorted[0][0], count: sorted[0][1] };
 }
 
-console.log("Method 4 (Using sort):", formatOutput(mostFrequent4(arr1)));
+console.log("Method 4 (Using sort):", formatOutput(mostFrequent4(arr1))); // Method 4 (Using sort): a ( 5 times )

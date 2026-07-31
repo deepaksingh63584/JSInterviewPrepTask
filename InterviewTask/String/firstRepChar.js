@@ -10,4 +10,4 @@ function firstRepChar(str) {
 }
 
 let str = "geeksforgeeks";
-console.log(firstRepChar(str));
+console.log(firstRepChar(str)); // Output: g

@@ -5,13 +5,13 @@ let c = [7,8,9]
 function totalSumArr(sumArr) {
     let sum =0;
     for (let sumValue of sumArr) {
-        if (Array.isArray(sumValue)){
-            sum = sum + totalSumArr(sumValue);
+        if (Array.isArray(sumValue)){ //
+            sum = sum + totalSumArr(sumValue); // Recursively call the function for nested arrays
         } else {
-            sum = sum + sumValue;
+            sum = sum + sumValue; // Add the value to the sum
         }
     }
     return sum;
 }
 const total = totalSumArr(a) + totalSumArr(b) + totalSumArr(c);
-console.log(total);
+console.log(total); // Output: 45

@@ -23,7 +23,7 @@ for (let i = 0; i < words.length; i++) {
     }
 }
 
-console.log(result);
+console.log(result); // Output: "this is a test only"
 
 
 

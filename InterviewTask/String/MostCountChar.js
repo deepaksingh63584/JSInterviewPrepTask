@@ -15,6 +15,6 @@ function mostFrequent1(arr) {
     }
     return { maxItem, maxCount };
 }
-console.log("Original array:", arr1);
+console.log("Original array:", arr1); // Original array: ksfhsdiufhskdfgggggggggjdfhgbksm
 
-console.log("Method 1 :", mostFrequent1(arr1));
+console.log("Method 1 :", mostFrequent1(arr1)); // Method 1 : { maxItem: 'g', maxCount: 9 }
