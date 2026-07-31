@@ -5,7 +5,7 @@ let c = [7,8,9]
 function totalSumArr(sumArr) {
     let sum =0;
     for (let sumValue of sumArr) {
-        if (Array.isArray(sumValue)){ //
+        if (Array.isArray(sumValue)){ // Check if the element is an array
             sum = sum + totalSumArr(sumValue); // Recursively call the function for nested arrays
         } else {
             sum = sum + sumValue; // Add the value to the sum
