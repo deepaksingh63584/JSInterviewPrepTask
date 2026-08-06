@@ -53,3 +53,13 @@ const result = arr.map((num) => {
 });
 
 console.log(result); // Output: [undefined, 4, undefined, 8, undefined]
+
+function foo() {
+  let x = (y = 0); // ⚠️ y becomes a global variable
+  x++;
+  y++;
+  return x;
+}
+
+console.log(foo(), typeof x, typeof y);
+// Output: 1, "undefined", "number"
