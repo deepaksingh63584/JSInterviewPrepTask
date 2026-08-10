@@ -15,4 +15,4 @@ function convertArrayToObject(arr) {
 }
 
 const singleObject = convertArrayToObject(data);
-console.log(singleObject);   // Expected output: { a: 1, b: 2, c: 3 }
+console.log(singleObject); // Expected output: { a: 1, b: 2, c: 3 }
